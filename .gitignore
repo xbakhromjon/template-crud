@@ -146,3 +146,4 @@ fabric.properties
 /mvnw
 /mvnw.cmd
 /src/test/java/uz/bakhromjon/TemplateCrudApplicationTests.java
+/.gcloudignore
