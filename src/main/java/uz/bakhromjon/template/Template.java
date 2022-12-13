@@ -4,11 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import uz.bakhromjon.enums.ETemplateType;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * @author : Bakhromjon Khasanboyev
@@ -25,4 +23,8 @@ public class Template {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String description;
+    @Enumerated(EnumType.STRING)
+    private ETemplateType templateType;
 }
+
+

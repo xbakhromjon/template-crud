@@ -25,7 +25,7 @@ public class TemplateController {
         return service.update(template);
     }
     @GetMapping("/{id}")
-    public ResponseEntity<?> get(@PathVariable Long id) {
+    public ResponseEntity<?> get(@PathVariable(required = true) Long id) {
         return service.get(id);
     }
 
@@ -39,3 +39,4 @@ public class TemplateController {
         return service.delete(id);
     }
 }
+
